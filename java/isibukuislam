@@ -1,59 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="8dp">
+package com.example.tbm;
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/iconback"/>
-    </LinearLayout>
+import android.os.Bundle;
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/header"
-        android:fillViewport="true">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="4dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:justificationMode="inter_word"
-            android:text="Islam dan Ilmu Pengetahuan
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
 
-\nPada hakikatnya, agama Islam tidak hanya memuat prinsip-prinsip moral dan spiritual, tetapi juga mendorong umatnya untuk mengeksplorasi ilmu pengetahuan dan memahami alam semesta. Dalam ajaran Islam, ilmu pengetahuan dipandang sebagai sarana untuk mengenal Allah lebih dekat melalui ciptaan-Nya.
-\n1. Hubungan antara Islam dan Ilmu Pengetahuan
-Al-Qur'an sebagai wahyu Ilahi menyebutkan banyak fenomena alam yang telah menjadi inspirasi bagi para ilmuwan untuk menggali dan memahaminya lebih jauh.
-Konsep-konsep seperti penciptaan alam semesta, perkembangan manusia, dan hukum alam diuraikan secara filosofis dan ilmiah di dalam Al-Qur'an.
-\n2. Dasar-Dasar Ilmu dalam Islam
-Ayat-ayat Al-Qur'an mengisyaratkan keberadaan hukum-hukum alam dan mendorong manusia untuk memperhatikannya. Sebagai contoh:
-Penciptaan manusia dari tanah dan air (QS 53:32, QS 71:14-18).
-Proses perkembangan embrio (QS 23:12-14).
-Keindahan dan keseimbangan alam semesta (QS 55:7).
-Prinsip bahwa segala sesuatu diciptakan dengan ukuran tertentu (QS 87:3, QS 25:2) menjadi landasan berpikir ilmiah dalam Islam.
-\n3. Perkembangan Pemikiran Ilmiah dalam Sejarah Islam
-Pada masa keemasan Islam, antara abad ke-8 dan ke-13, para sarjana Muslim seperti Al-Farabi, Ibnu Sina, dan Al-Khawarizmi memperluas batas ilmu pengetahuan dengan mengembangkan matematika, kedokteran, astronomi, dan filsafat.
-Pengetahuan yang dikembangkan para ilmuwan Muslim ini kemudian diserap oleh peradaban Barat pada masa Renaissance.
-\n4. Konsep Evolusi Kreatif
-Islam mengajarkan bahwa alam semesta berkembang melalui proses evolusi kreatif yang dipimpin oleh Allah. Proses ini mencakup:
-Pembentukan alam semesta dari satu zat yang homogen (QS 41:11).
-Perkembangan planet-planet dan bumi (QS 79:30, QS 65:12).
-Kehidupan manusia sebagai puncak penciptaan (QS 91:7-10).
- "/>
-    </ScrollView>
+class Detailbukuislam extends AppCompatActivity {
 
-</RelativeLayout>
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_detailbukuislam);
+    }
+}
